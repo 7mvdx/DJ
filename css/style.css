@@ -983,6 +983,7 @@ transition: all 0.3s ease-in;
     .header-top {
         background: black; /* Remove the background image */
     }
+}
 
  .header {
      position: absolute;
