@@ -978,6 +978,12 @@ transition: all 0.3s ease-in;
     
      min-height: 980px;
 }
+
+@media only screen and (max-width: 600px) { /* Adjust the max-width as needed */
+    .header-top {
+        background: black; /* Remove the background image */
+    }
+
  .header {
      position: absolute;
      z-index: 999;
