@@ -379,96 +379,540 @@
 
       <div id="gallery" class="Gallery">
         <div class="container">
-          <div class="row display_boxflex">
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-              <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
-                  <div class="Gallery_img">
-                    <figure><img src="images/gallery1.jpg" alt="#" /></figure>
-                  </div>
-                  <div class="hover_box">
-                    <ul class="icon_hu">
-                      <h3>Music night</h3>
-                      <li>
-                        <a href="#"><img src="icon/h.png" alt="#" /></a>
-                      </li>
-                      <li>
-                        <a href="#"><img src="icon/h.png" alt="#" /></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott">
-                  <div class="Gallery_img">
-                    <figure><img src="images/gallery2.jpg" alt="#" /></figure>
-                  </div>
-                  <div class="hover_box">
-                    <ul class="icon_hu">
-                      <h3>Music night</h3>
-                      <li>
-                        <a href="#"><img src="icon/h.png" alt="#" /></a>
-                      </li>
-                      <li>
-                        <a href="#"><img src="icon/h.png" alt="#" /></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margi_bott1">
-                  <div class="Gallery_img">
-                    <figure><img src="images/gallery3.jpg" alt="#" /></figure>
-                  </div>
-                  <div class="hover_box">
-                    <ul class="icon_hu">
-                      <h3>Music night</h3>
-                      <li>
-                        <a href="#"><img src="icon/h.png" alt="#" /></a>
-                      </li>
-                      <li>
-                        <a href="#"><img src="icon/h.png" alt="#" /></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="Gallery_img">
-                    <figure><img src="images/gallery4.jpg" alt="#" /></figure>
-                  </div>
-                  <div class="hover_box">
-                    <ul class="icon_hu">
-                      <h3>Music night</h3>
-                      <li>
-                        <a href="#"><img src="icon/h.png" alt="#" /></a>
-                      </li>
-                      <li>
-                        <a href="#"><img src="icon/h.png" alt="#" /></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <!-- Gallery Title and Description at the top (centered) -->
+          <div class="row mb-5">
+            <div class="col-12 text-center">
               <div class="Gallery_text">
-                <div class="titlepage">
+                <div class="titlepage text-center">
                   <h2>Gallery</h2>
                 </div>
-                <p>
-                  Welcome to my gallery! Here, you’ll find a curated collection
+                <p class="mx-auto text-center" style="max-width: 800px">
+                  Welcome to my gallery! Here, you'll find a curated collection
                   of moments captured during my performances, showcasing the
                   energy and passion I bring to every event. Each image reflects
                   the vibrant atmosphere I create, the diverse crowds I connect
                   with, and the unforgettable musical experiences I strive to
                   deliver. Dive in and experience the rhythm and excitement that
                   defines my journey as a professional DJ!
-                  <a href="Javascript:void(0)">Read More</a>
                 </p>
+                <!-- Centered Read More button -->
+                <div class="text-center mt-4" style="display: flex">
+                  <a href="#" class="btn btn-primary mx-auto">Read More</a>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <!-- All Images Below -->
+          <div class="row" id="gallery-container">
+            <!-- Initial 8 images (will be visible by default) -->
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery1.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Music night</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery2.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Music night</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery3.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Music night</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery4.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Music night</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery5.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Club Mix</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery6.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Festival Vibes</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery7.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Beach Party</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery8.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Rooftop Session</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Hidden images (will be shown after clicking "Load More") -->
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott gallery-item hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery9.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Private Event</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery10.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Wedding Mix</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery11.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Studio Session</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery12.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Corporate Event</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery13.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Summer Festival</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery14.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Club Opening</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery15.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>VIP Lounge</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery16.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Outdoor Concert</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery17.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Nightclub Event</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery18.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Birthday Party</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery19.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Boat Party</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery20.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Hotel Event</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery21.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>New Year's Eve</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery22.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>College Party</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margi_bott hidden-gallery-item"
+            >
+              <div class="Gallery_img">
+                <figure><img src="images/gallery23.jpg" alt="#" /></figure>
+              </div>
+              <div class="hover_box">
+                <ul class="icon_hu">
+                  <h3>Fashion Show</h3>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="icon/h.png" alt="#" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Load More Button (centered) -->
+          <div class="row mt-4">
+            <div class="col-12 text-center">
+              <button id="load-more-btn" class="btn btn-primary mx-auto">
+                Load More
+              </button>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- CSS for hidden gallery items and buttons -->
+      <style>
+        .hidden-gallery-item {
+          display: none;
+        }
+
+        /* Optional animation for when new items appear */
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        .fade-in {
+          animation: fadeIn 0.5s ease-in-out;
+        }
+
+        /* Custom button styling if needed */
+        .btn {
+          display: inline-block;
+          padding: 8px 20px;
+          border-radius: 4px;
+          text-decoration: none;
+        }
+
+        .btn-primary {
+          background-color: #007bff;
+          color: white;
+          border: none;
+        }
+
+        .btn-primary:hover {
+          background-color: #0069d9;
+        }
+      </style>
+
+      <!-- JavaScript for Load More functionality -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Get the load more button
+          const loadMoreBtn = document.getElementById("load-more-btn");
+
+          // Get all hidden gallery items
+          const hiddenItems = document.querySelectorAll(".hidden-gallery-item");
+
+          // Track which batch of images we're on
+          let currentBatch = 0;
+          const itemsPerBatch = 4; // Show 4 more images each time
+          const totalBatches = Math.ceil(hiddenItems.length / itemsPerBatch);
+
+          // Add click event listener to the load more button
+          loadMoreBtn.addEventListener("click", function () {
+            // Calculate start and end indices for the current batch
+            const startIdx = currentBatch * itemsPerBatch;
+            const endIdx = Math.min(
+              startIdx + itemsPerBatch,
+              hiddenItems.length,
+            );
+
+            // Show the next batch of images
+            for (let i = startIdx; i < endIdx; i++) {
+              hiddenItems[i].classList.remove("hidden-gallery-item");
+              hiddenItems[i].classList.add("fade-in");
+            }
+
+            // Increment the batch counter
+            currentBatch++;
+
+            // Hide the load more button if we've shown all images
+            if (currentBatch >= totalBatches) {
+              loadMoreBtn.style.display = "none";
+            }
+          });
+        });
+      </script>
       <!-- end Gallery -->
 
       <!-- Video Grid Section -->
